@@ -53,7 +53,7 @@
         </button>
     </div>
     <div class="container mx-auto max-w-7xl">
-        <div class="w-full bg-[#0F0E24]">
+        <div class="w-full bg-primary">
             <div class="container mx-auto max-w-7xl py-1">
                 <div class="flex justify-center">
                     <span class="text-center text-white">PRODUCTOS MAS VENDIDOS

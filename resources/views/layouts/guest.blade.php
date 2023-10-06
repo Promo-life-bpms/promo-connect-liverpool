@@ -16,7 +16,7 @@
 </head>
 
 <body class="h-screen">
-    <div class="container mx-auto max-w-7xl">
+    <div class="container w-full">
         @yield('content')
     </div>
 
