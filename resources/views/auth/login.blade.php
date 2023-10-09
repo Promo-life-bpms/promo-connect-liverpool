@@ -7,7 +7,7 @@
         style="object-fit: contain;"
         class="max-w-full max-full md:max-w-full" >
     </div>
-    <div class="container h-full w-full">
+    <div class="container h-full w-full mx-auto">
         <div class="g-6 flex h-full flex-wrap items-center justify-center ">
             <div class="md:w-6/12 mt-40" style="width:400px">
 
