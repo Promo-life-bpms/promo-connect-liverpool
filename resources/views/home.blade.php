@@ -56,12 +56,12 @@
         <div class="w-full bg-primary">
             <div class="container mx-auto max-w-7xl py-1">
                 <div class="flex justify-center">
-                    <span class="text-center text-white">PRODUCTOS MAS VENDIDOS
+                    <span class="text-center text-white">LOS MÁS VENDIDOS
                     </span>
                 </div>
             </div>
         </div>
-        <div class="container mx-auto max-w-7xl py-8">
+        <div class="container mx-auto max-w-7xl py-8 bg-white">
                 <div class="flex flex-wrap justify-between">
                     @foreach ($latestProducts as $product)
                         <a href="{{ route('show.product', ['product' => $product->id]) }}" class="max-h-40 w-auto text-center">
@@ -71,30 +71,31 @@
                     @endforeach
                  </div>
         </div>
-        <div class="w-full bg-[#0F0E24]">
+        <div class="w-full bg-white">
             <div class="container mx-auto max-w-7xl py-1">
-                <div class="flex justify-center">
-                    <span class="text-center text-white">CATEGORIAS
+                <div class="flex justify-center bg-primary ">
+                    <span class="text-center text-white p-1">CATEGORIAS
                     </span>
                 </div>
             </div>
         </div>
         <div class="container mx-auto max-w-7xl py-8">
             <div class="flex flex-wrap justify-between">
+
                 @foreach ($latestCategorias as $cat)
-                    <div>
-                        <div
-                            class="border border-[#FECB2E]  bg-slate-50 hover:bg-slate-100 transition-colors rounded-full shadow-lg w-40 h-40 flex justify-center items-center text-center cursor-pointer">
-                            <a href="{{ route('categoryfilter', ['category' => $cat->id]) }}"
-                                class="bg-[#FECB2E] font-bold text-black uppercase text-sm px-3 py-2 w-4/5">
-                                {{ $cat->family }}
-                            </a>
-                        </div>
+                    <div
+                        class="bg-slate-50 hover:bg-slate-100 transition-colors rounde shadow-lg w-40 h-40 flex justify-center items-center text-center cursor-pointer"
+                        style="background-image: url('{{ asset('img/CATBEBIDAS.png') }}'); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                        <a href="{{ route('categoryfilter', ['category' => $cat->id]) }}"
+                            class="bg-primary-dark font-bold text-white uppercase text-sm px-3 py-2 w-4/5">
+                            {{ $cat->family }}
+                        </a>
                     </div>
-                @endforeach
+                @endforeach 
+
             </div>
         </div>
-        <div class="w-full bg-[#0F0E24]">
+        <div class="w-full bg-primary">
             <div class="container mx-auto max-w-7xl py-1">
                 <div class="flex justify-center">
                     <span class="text-center text-white">MAS PRODUCTOS
@@ -119,7 +120,7 @@
         </div>
         <div class="container mx-auto max-w-7xl">
             <div class="relative overflow-hidden h-40 text-center">
-                <img class="h-auto w-full" src="{{ asset('img/_d9b3498b-78d2-4d9e-98a7-993655d16f7c.jfif') }}"
+                <img class="h-auto w-full" src="{{ asset('img/footer_banner.png') }}"
                     alt="">
                 <p class="absolute top-10 uppercase text-white text-5xl inset-x-8">Premium Brands</p>
             </div>

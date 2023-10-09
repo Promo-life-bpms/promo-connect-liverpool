@@ -113,7 +113,7 @@
                                     rows="1" placeholder="Message..." style="outline: none;" wire:keydown.enter='sendMessage'
                                     wire:model='message'>  </textarea>
                                 <button class="m-2" style="outline: none;" wire:click='sendMessage'>
-                                    <svg class="svg-inline--fa text-blue-400 fa-paper-plane fa-w-16 w-12 h-12 py-2 mr-2"
+                                    <svg class="svg-inline--fa text-primary-dark fa-paper-plane fa-w-16 w-12 h-12 py-2 mr-2"
                                         aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane"
                                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path fill="currentColor"

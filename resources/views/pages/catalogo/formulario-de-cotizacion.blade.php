@@ -3,7 +3,7 @@
 
     <p class="w-100 py-2"><strong>Personalizacion de la tecnica</strong></p>
     <div class="">
-        <div class="border border-primary rounded">
+        <div class="rounded">
             <div class="grid grid-cols-2">
                 <div class="m-0 mb-1 col-span-1">
                     <label for="tecnica" class="text-dark m-0"><strong>Material</strong> </label>
@@ -204,10 +204,10 @@
 
                                     <div class="flex">
                                         <div class="flex-1 w-50 bg-stone-300 p-2 mr-2 cursor-pointer" id="logo1">
-                                            <img src="{{asset('img/logo_uvp.png')}}" alt="logo" class="w-30" id="">
+                                            <img src="{{asset('img/logo_white.png')}}" alt="logo" class="w-30" id="">
                                         </div>
                                         <div class="flex-1 w-50 bg-stone-300 p-2 cursor-pointer" id="logo2">
-                                            <img src="{{asset('img/logo_uvp_black.png')}}" alt="logo" class="w-30">
+                                            <img src="{{asset('img/logo_pink.png')}}" alt="logo" class="w-30">
                                         </div>
                                     </div>
                                     
@@ -256,7 +256,7 @@
                                                 wire:model="photo" accept="image/*" onchange="fileUploaded()" id="fileInput">
                                                 <div class="text-xs m-1" id="statusIcon"></div> -->
 
-                                        <button class="w-full bg-[#FECB2E] hover:bg-[#F79C19] text-black py-2 px-4 rounded" id="sendImageToBackend">GUARDAR</button>
+                                        <button class="w-full bg-primary hover:bg-primary-dark text-white py-2 px-4 rounded" id="sendImageToBackend">GUARDAR</button>
                                         <p class="inline-block cursor-pointer transition duration-300 ease-in-out text-green-600 text-sm" id="savedText" style="display:none;">Imagen guardada, ya puedes cerrar esta ventana</p>
                                         <p class="inline-block cursor-pointer transition duration-300 ease-in-out text-red-600 text-sm" id="errorText" style="display:none;">Ocurrio un error al guardar la imagen, intenta nuevamente</p>
 
@@ -269,7 +269,7 @@
         </div>
     </div>
 
-    <div class="border border-primary rounded">
+    <div class=" rounded">
         <div class="form-group m-0 mb-1 ">
             <label for="newTechnique" class="text-dark m-0">
                 <strong>Dias de entrega:</strong>
@@ -322,7 +322,7 @@
             @endif
         </div>
 
-        <button class="bg-[#FECB2E] hover:bg-[#F79C19] text-black py-3 col-span-4" wire:click="agregarCarrito()">
+        <button class="bg-primary hover:bg-primary-dark text-white py-3 col-span-4" wire:click="agregarCarrito()">
             Agregar al carrito
         </button>
         @if (session()->has('message'))
@@ -382,8 +382,8 @@
        /*  Obtener de path de imagenes */
         var imageURL = "{{ $product->images != '[]'?  $product->images[0]->image_url : '' }}";
         var productID = "{{ $product->id }}";
-        var logo1 = "{{asset('img/logo_uvp.png')}}";
-        var logo2 = "{{asset('img/logo_uvp_black.png')}}";
+        var logo1 = "{{asset('img/logo_white.png')}}";
+        var logo2 = "{{asset('img/logo_pink.png')}}";
         if(imageURL.startsWith("https://catalogodeproductos.promolife.lat/")){
             imageURL = imageURL.slice(41);
         }

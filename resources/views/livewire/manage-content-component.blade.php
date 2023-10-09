@@ -14,7 +14,7 @@
 
             <div class="">
                 <button data-modal-target="modalAddBanner" data-modal-toggle="modalAddBanner"
-                    class="bg-[#2B2D2F] text-white w-full rounded-md hover:bg-gray-700 px-4 py-2">
+                    class="bg-primary hover:bg-primary-dark text-white w-full rounded-md  px-4 py-2">
                     Agregar
                 </button>
             </div>

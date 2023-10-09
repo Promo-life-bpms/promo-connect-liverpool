@@ -2,7 +2,7 @@
     <div class="z-50 fixed bottom-0 right-0 p-4 rounded-md">
         <div class="hidden transition-all" id="soporte" wire:ignore.self>
             <div class="flex flex-col justify-between bg-white shadow-2xl rounded-md" style="width: 350px; height: 550px">
-                <div class="bg-[#E00109] h-16 pt-2 text-white flex justify-between items-center shadow-md p-2 rounded-md"
+                <div class="bg-primary h-16 pt-2 text-white flex justify-between items-center shadow-md p-2 rounded-md"
                     style="width: 350px">
                     <div class="my-3 text-green-100 font-bold text-lg tracking-wide">Soporte </div>
                     <div onclick="hideChat()" class="hover:cursor-pointer">
@@ -34,7 +34,7 @@
                         @else
                             <div class="clearfix">
                                 <div
-                                    class="bg-blue-500 text-white float-right w-3/4 mx-4 my-2 p-2 rounded-lg clearfix flex flex-wrap justify-between">
+                                    class="bg-primary text-white float-right w-3/4 mx-4 my-2 p-2 rounded-lg clearfix flex flex-wrap justify-between">
                                     <span class="text-sm">Tú</span>
                                     <p class="m-0 p-0 w-full break-words">
                                         {{ json_decode($item->message)->data }}
@@ -53,7 +53,7 @@
                         wire:model='message'>
                     </textarea>
                     <button class="m-2" style="outline: none;" wire:click='sendMessage'>
-                        <svg class="svg-inline--fa text-[#662D91] fa-paper-plane fa-w-16 w-12 h-12 py-2 mr-2"
+                        <svg class="svg-inline--fa text-primary-dark fa-paper-plane fa-w-16 w-12 h-12 py-2 mr-2"
                             aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane"
                             role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="currentColor"
@@ -65,7 +65,7 @@
         </div>
         <div class="block transition-all" id="buttonSoporte" wire:ignore.self>
             <button onclick="showChat()"
-                class="bg-[#E00109] hover:bg-[#E00109] text-white font-bold rounded-full shadow-lg w-14 h-14 flex items-center justify-center">
+                class="bg-primary hover:bg-primary-dark text-white font-bold rounded-full shadow-lg w-14 h-14 flex items-center justify-center">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-8 h-8">

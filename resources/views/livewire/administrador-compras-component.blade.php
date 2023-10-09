@@ -86,7 +86,7 @@
                     <td class="w-[15%]">
 
                         <a href="{{ route('verCotizacion', ['quote' => $compra->quote_id]) }}" class="btn-sm"> <button
-                                class="bg-[#0047BB] hover:bg-[#0084FF] text-white h-[50px] w-full px-2 ">VER COMPRA</button>
+                                class="bg-primary hover:bg-primary-dark text-white h-[50px] w-full px-2 ">VER COMPRA</button>
                         </a>
                     </td>
 

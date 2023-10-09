@@ -1,8 +1,8 @@
 <div  class="fixed top-0 left-0 right-0 z-50">
-    <nav class="w-full flex justify-between py-2 px-12 items-center flex-wrap md:flex-nowrap px-3 md:py-1 bg-white" >
+    <nav class="w-full flex justify-between py-2 px-12 items-center flex-wrap md:flex-nowrap px-3 md:py-1 bg-primary" >
         <div class="w-2/12">
             <a href="{{ route('index') }}">
-                <img src="{{asset('img/logo_pink.png')}}"
+                <img src="{{asset('img/logo_white.png')}}"
                     style="object-fit: contain;"
                     alt="logo" class="w-80 p-6 ml-12">
             </a>
@@ -71,19 +71,19 @@
                         <ul class="flex ">
                             <li>
                                 <a href="{{ route('seller.content') }}"
-                                    class="block px-4 py-2 text-white hover:text-[#EDBA04] text-lg">Banners</a>
+                                    class="block px-4 py-2 text-white hover:text-primary-superlight text-lg">Banners</a>
                             </li>
                             <li>
                                 <a href="{{ route('seller.compradores') }}"
-                                    class="block px-4 py-2 text-lg text-white hover:text-[#EDBA04]">Compradores</a>
+                                    class="block px-4 py-2 text-lg text-white hover:text-primary-superlight">Compradores</a>
                             </li>
                             <li>
                                 <a href="{{ route('seller.pedidos') }}"
-                                    class="block px-4 py-2 text-white hover:text-[#EDBA04] text-lg">Compras</a>
+                                    class="block px-4 py-2 text-white hover:text-primary-superlight text-lg">Compras</a>
                             </li>
                             <li>
                                 <a href="{{ route('seller.muestras') }}"
-                                    class="block px-4 py-2 text-white hover:text-[#EDBA04] text-lg">Muestras</a>
+                                    class="block px-4 py-2 text-white hover:text-primary-superlight text-lg">Muestras</a>
                             </li>
                            
 
@@ -236,7 +236,7 @@
 
                     <!-- Dropdown menu -->
                     <div id="dropdown"
-                        class="z-40 hidden bg-[#0F0E24] divide-y divide-gray-100 rounded-lg shadow w-44 text-white hover:text-[#0F0E24]">
+                        class="z-40 hidden bg-primary divide-y divide-gray-100 rounded-lg shadow w-44 text-white hover:text-white">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
                             @role('buyers-manager')
                                 <li>
@@ -271,7 +271,7 @@
 
                             <li>
                                 <button data-modal-target="popup-modal" data-modal-toggle="popup-modal"
-                                    class="w-full text-left text-base block px-4 py-2 text-white hover:text-[#000000] hover:bg-white">Cerrar
+                                    class="w-full text-left text-base block px-4 py-2 text-white hover:text-white hover:bg-primary-dark">Cerrar
                                     Sesion</button>
                             </li>
 
@@ -280,20 +280,20 @@
                 </div>
 
                 <button id="dropdownHoverButton" data-dropdown-toggle="dropdown"
-                    class="text-white hover:text-[#EDBA04] focus:ring-4 focus:outline-none p-1 font-medium focus:rounded text-lg text-center inline-flex items-center"
+                    class="text-primary hover:text-primary focus:ring-4 focus:outline-none p-1 font-medium focus:rounded text-lg text-center inline-flex items-center"
                     type="button">
                     <svg width="25px" height="25px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="6" r="4" fill="white" stroke="primary" stroke-width="2"/>
-                        <ellipse cx="12" cy="17" rx="7" ry="4" fill="white" stroke="primary" stroke-width="2"/>
+                        <circle cx="12" cy="6" r="4"  stroke-width="2"fill="white" />
+                        <ellipse cx="12" cy="17" rx="7" ry="4" stroke-width="2" fill="white"/>
                     </svg>
 
                 </button>
                 
                 @role(['buyers-manager', 'buyer'])
-                    <a class="text-white hover:text-[#EDBA04]" href="{{ route('catalogo') }}">
+                    <a class="text-primary hover:text-primary" href="{{ route('catalogo') }}">
                         <div class="mt-1">
-                            <svg width="25px" height="25px" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25013 6.01489C8.25003 6.00994 8.24998 6.00498 8.24998 6V5C8.24998 2.92893 9.92892 1.25 12 1.25C14.0711 1.25 15.75 2.92893 15.75 5 V6C15.75 6.00498 15.7499 6.00994 15.7498 6.01489C17.0371 6.05353 17.8248 6.1924 18.4261 6.69147C19.2593 7.38295 19.4787 8.55339 19.9177 10.8943L20.6677 14.8943C21.2849 18.186 21.5934 19.8318 20.6937 20.9159C19.794 22 18.1195 22 14.7704 22H9.22954C5.88048 22 4.20595 22 3.30624 20.9159C2.40652 19.8318 2.71512 18.186 3.33231 14.8943L4.08231 10.8943C4.52122 8.55339 4.74068 7.38295 5.57386 6.69147C6.17521 6.1924 6.96287 6.05353 8.25013 6.01489ZM9.74998 5C9.74998 3.75736 10.7573 2.75 12 2.75C13.2426 2.75 14.25 3.75736 14.25 5 V6C14.25 5.99999 14.25 6.00001 14.25 6C14.1747 5.99998 14.0982 6 14.0204 6H9.97954C9.90176 6 9.82525 6 9.74998 6.00002C9.74998 6.00002 9.74998 6.00003 9.74998 6.00002V5" stroke="primary"/>
+                            <svg width="25px" height="25px" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25013 6.01489C8.25003 6.00994 8.24998 6.00498 8.24998 6V5C8.24998 2.92893 9.92892 1.25 12 1.25C14.0711 1.25 15.75 2.92893 15.75 5 V6C15.75 6.00498 15.7499 6.00994 15.7498 6.01489C17.0371 6.05353 17.8248 6.1924 18.4261 6.69147C19.2593 7.38295 19.4787 8.55339 19.9177 10.8943L20.6677 14.8943C21.2849 18.186 21.5934 19.8318 20.6937 20.9159C19.794 22 18.1195 22 14.7704 22H9.22954C5.88048 22 4.20595 22 3.30624 20.9159C2.40652 19.8318 2.71512 18.186 3.33231 14.8943L4.08231 10.8943C4.52122 8.55339 4.74068 7.38295 5.57386 6.69147C6.17521 6.1924 6.96287 6.05353 8.25013 6.01489ZM9.74998 5C9.74998 3.75736 10.7573 2.75 12 2.75C13.2426 2.75 14.25 3.75736 14.25 5 V6C14.25 5.99999 14.25 6.00001 14.25 6C14.1747 5.99998 14.0982 6 14.0204 6H9.97954C9.90176 6 9.82525 6 9.74998 6.00002C9.74998 6.00002 9.74998 6.00003 9.74998 6.00002V5" fill="white"/>
                             </svg>
                         </div>
                     </a>

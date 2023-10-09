@@ -71,13 +71,13 @@
                                     Ver Proceso
                                 </a>
                                 <button
-                                    class="block w-full border-[#662D91]  hover:border-[#F79C19] text-center rounded-sm font-semibold py-1 px-4"
+                                    class="block w-full border-primary hover:border-primary-dark text-center rounded-sm font-semibold py-1 px-4"
                                     onclick="solicitarMuestra({{ $quote->id }})">
                                     Solicitar Muestra
                                 </button>
                             @else
                                 <button
-                                    class="block w-full border-2 border-[#662D91] hover:border-[#F79C19] text-center rounded-sm font-semibold py-1 px-4"
+                                    class="block w-full border-2 border-primary hover:border-primary-dark text-center rounded-sm font-semibold py-1 px-4"
                                     onclick="solicitarMuestra({{ $quote->id }})">
                                     Solicitar Muestra
                                 </button>
@@ -112,7 +112,7 @@
                         @method('POST')
                         @csrf
                         <button type="submit"
-                            class="block w-full bg-[#FECB2E] hover:bg-[#F79C19] text-black text-center rounded-sm font-semibold py-2 px-4">
+                            class="block w-full bg-primary hover:bg-primary-dark text-white text-center rounded-sm font-semibold py-2 px-4">
                             Enviar Carrito
                         </button>
                     </form>
@@ -159,7 +159,7 @@
                 </div>
             </div>
             <button class="px-3 py-1 text-md " onclick="closeModal()">Cancelar</button>
-            <button class="px-5 py-1 ml-2 rounded-sm text-md text-black font-semibold bg-[#FECB2E] hover:bg-[#F79C19]"
+            <button class="px-5 py-1 ml-2 rounded-sm text-md text-white font-semibold bg-primary hover:bg-primary-dark"
                 wire:click="solicitarMuestra">Enviar</button>
         </div>
 

@@ -185,7 +185,7 @@
                                         </td> --}}
                                             <td class="w-[13%]">
                                                 <a href="/carrito/muestra/{{ $muestra->id_muestra }}">
-                                                    <button class="bg-[#2B2D2F] text-white h-[50px] w-full px-2 ">VER
+                                                    <button class="bg-primary text-white h-[50px] w-full px-2 ">VER
                                                         MUESTRA
                                                     </button>
                                                 </a>

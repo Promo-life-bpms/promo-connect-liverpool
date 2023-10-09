@@ -33,18 +33,13 @@
         <div class="flex-grow w-full" style="margin-top:102px;">
             @yield('content')
         </div>
-        <div class="py-5 w-full bg-[#0F0E24] ">
+        <div class="py-5 w-full bg-dark-medium ">
             
-
-            <div class="w-full flex items-center justify-center text-white mt-4">
-                <p>© 2023 Promolife. All Rights Reserved.  </p>
+            <div class="w-full flex justify-between items-center text-white mt-4 ">
+                <p class="ml-4 mr-4">CONTACTO: </p>
+                <p class="ml-4 mr-8">© 2023 BH Trademarket. All Rights Reserved.</p>
             </div>
-
-            <!-- <div
-                class="container mx-auto max-w-7xl flex justify-between flex-col md:flex-row items-center text-white font-semibold px-4 md:px-1">
-                <p class="text-xl">CONTACTO: 55-18-75-17-89</p>
-                <p class="text-xl">POWER BY PROMO LIFE</p>
-            </div> -->
+            
         </div>
         @role(['buyers-manager', 'buyer'])
             @livewire('soporte-component')

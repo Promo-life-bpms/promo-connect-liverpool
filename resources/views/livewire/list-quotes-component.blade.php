@@ -34,7 +34,7 @@
                             </td>
                             <td class="font-medium flex justify-center ">
                                 <a href="{{ route('verCotizacion', ['quote' => $quote->id]) }}" class="btn-sm"><button
-                                        class="bg-[#0047BB] hover:bg-[#0084FF] px-10 py-2  text-white">Ver
+                                        class="bg-primary hover:bg-primary-dark px-10 py-2  text-white">Ver
                                         Compra</button></a>
                             </td>
                         </tr>
