@@ -390,7 +390,7 @@
         /* Identificadores */
         var selectedLogo1 = document.getElementById("logo1");
         var selectedLogo2 = document.getElementById("logo2");
-        var selectedLogo3 = document.getElementById("logo3");
+        
         var logoURL = document.getElementById("imageInput");
 
         /* Canvas en DOOM*/
@@ -479,20 +479,7 @@
                 });
             });
 
-            /* Evento para agregar el tercer logo del modal */
-            selectedLogo3.addEventListener("click", function() {
-                if (selectedImage) {
-                    canvas.remove(selectedImage);
-                }
-                fabric.Image.fromURL(logo3, function (image) {
-                    image.scaleToWidth(50);
-                    image.scaleToHeight(50);
-                    image.set({ left: 100, top: 100, selectable: true, crossOrigin: 'anonymous' });
-                    canvas.add(image);
-                    selectedImage = image;
-                    canvas.renderAll();
-                });
-            });
+            
 
             /* Evento para agregar texto */
             var textObject = null;
